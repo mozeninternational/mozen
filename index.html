@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior:smooth">
 <head>
-<script>
-(function(){
-  window.onerror=function(){return true;};
-  window.addEventListener('error',function(e){try{e.preventDefault();e.stopPropagation();}catch(x){}return true;},{capture:true});
-  window.addEventListener('unhandledrejection',function(e){try{e.preventDefault();e.stopPropagation();}catch(x){}},{capture:true});
-})();
-</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -1248,14 +1242,5 @@ document.addEventListener('DOMContentLoaded', function() {
 <div id="hint"><svg width="12" height="18" viewBox="0 0 12 18" fill="none"><path d="M6 1v16M1 12l5 5 5-5" stroke="rgba(168,176,192,.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
   Scroll
 </div>
-  <!-- 언어 선택 버튼 -->
-  <div style="position:fixed;bottom:30px;right:14px;z-index:200;display:flex;gap:5px;align-items:center">
-    <button class="lang-btn" data-lang="ko" onclick="setLang('ko')"
-      style="font-size:10px;font-weight:600;padding:5px 10px;border-radius:20px;border:1px solid rgba(201,169,110,.5);background:rgba(201,169,110,0.12);color:rgba(201,169,110,.85);cursor:pointer;letter-spacing:0.5px">한국어</button>
-    <button class="lang-btn" data-lang="zh" onclick="setLang('zh')"
-      style="font-size:10px;font-weight:600;padding:5px 10px;border-radius:20px;border:1px solid rgba(201,169,110,.5);background:rgba(201,169,110,0.12);color:rgba(201,169,110,.85);cursor:pointer;letter-spacing:0.5px">中文</button>
-    <button class="lang-btn" data-lang="en" onclick="setLang('en')"
-      style="font-size:10px;font-weight:800;padding:5px 10px;border-radius:20px;border:1px solid rgba(201,169,110,.5);background:rgba(201,169,110,0.9);color:#080C16;cursor:pointer;letter-spacing:0.5px">EN</button>
-  </div>
 </body>
 </html>
