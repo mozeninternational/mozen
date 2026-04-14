@@ -56,7 +56,7 @@
   <!-- 언어 선택 버튼 -->
   <div style="position:fixed;bottom:30px;right:14px;z-index:200;display:flex;gap:5px;align-items:center">
     <button class="lang-btn" data-lang="ko" onclick="setLang('ko')"
-      style="font-size:10px;font-weight:600;padding:5px 10px;border-radius:20px;border:1px solid rgba(201,169,110,.5);background:rgba(201,169,110,0.12);color:rgba(201,169,110,.85);cursor:pointer;letter-spacing:0.5px">한국어</button>
+      style="font-size:10px;font-weight:600;padding:5px 10px;border-radius:20px;border:1px solid rgba(201,169,110,.5);background:rgba(201,169,110,0.12);color:rgba(201,169,110,.85);cursor:pointer;letter-spacing:0.5px;display:none">한국어</button>
     <button class="lang-btn" data-lang="zh" onclick="setLang('zh')"
       style="font-size:10px;font-weight:600;padding:5px 10px;border-radius:20px;border:1px solid rgba(201,169,110,.5);background:rgba(201,169,110,0.12);color:rgba(201,169,110,.85);cursor:pointer;letter-spacing:0.5px">中文</button>
     <button class="lang-btn" data-lang="en" onclick="setLang('en')"
@@ -537,16 +537,12 @@
 
   <!-- 홈쇼핑 인트로 영상 -->
   <div style="width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;margin-bottom:18px;background:#000">
-    <video
-      id="intro-video"
-      src="homeshopping_intro.mp4"
-      muted
-      loop
-      playsinline
-      controls
-      preload="auto"
-      style="width:100%;height:100%;object-fit:cover;display:block"
-    ></video>
+    <iframe
+      src="https://www.youtube.com/embed/h6DAO_3SGVw?autoplay=1&mute=1&loop=1&playlist=h6DAO_3SGVw&playsinline=1&controls=1"
+      style="width:100%;height:100%;border:none;display:block"
+      allow="autoplay; encrypted-media; picture-in-picture"
+      allowfullscreen
+    ></iframe>
   </div>
 
   <!-- 두 채널 카드 -->
